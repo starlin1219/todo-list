@@ -97,7 +97,7 @@ const requestListener = (req, res)=>{
                 errorHandle(res);
             }
         })
-    }else if(res.method == "OPTIONS"){
+    }else if(req.method == "OPTIONS"){
         res.writeHead(200, headers);
         res.end();
     }else {
